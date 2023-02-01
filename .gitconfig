@@ -1,0 +1,11 @@
+[user]
+	email = VeckoTheGecko@users.noreply.github.com
+	name = Vecko
+[core]
+	filemode = false
+[init]
+	defaultBranch = main
+[http]
+	postBuffer = 1048576000
+[alias]
+	ac = !git add -A && git commit
