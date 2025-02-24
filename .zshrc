@@ -1,4 +1,5 @@
 alias config='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias repos='cd ~/coding/repos && code'
 eval "$(starship init zsh)"
 
 
