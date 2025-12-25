@@ -1,6 +1,6 @@
 .PHONY: update
 update:
-	home-manager switch --flake .#vecko
+	home-manager switch --flake .#personal
 
 .PHONY: clean
 clean:

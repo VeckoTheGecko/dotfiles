@@ -19,9 +19,9 @@
       pkgs = import nixpkgs { inherit system; };
     in {
       homeConfigurations = {
-        vecko = home-manager.lib.homeManagerConfiguration {
+        personal = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ];
+          modules = [ ./personal.nix ];
         };
       };
     };
