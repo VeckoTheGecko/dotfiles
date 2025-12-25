@@ -1,13 +1,39 @@
-{ lib, pkgs, ... }:
-{
-  home = {
-    packages = with pkgs; [
-    ];
-    username = "vecko";
-    homeDirectory = "/home/vecko";
+{ lib, pkgs, ... }: let
+  username = "vecko";
+  in {
+    home = {
+      packages = with pkgs; [
+      ];
+      inherit username;
+      homeDirectory = "/home/${username}";
 
-    # You do not need to change this if you're reading this in the future.
-    # Don't ever change this after the first build.  Don't ask questions.
-    stateVersion = "25.11";
-  };
-}
+      # You do not need to change this if you're reading this in the future.
+      # Don't ever change this after the first build.  Don't ask questions.
+      stateVersion = "25.11";
+    };
+    programs.git = {
+      enable = true;
+      settings = {
+        user.name = "Vecko";
+        user.email = "36369090+VeckoTheGecko@users.noreply.github.com";
+
+        init.defaultBranch = "main";
+      
+        alias = {
+          ac = "!git add -u && git commit";
+          cleanup = "!git branch --merged | grep -v '^\\*|master|develop' | xargs -n1 -r git branch -d";
+          lg1 = "lg1-specific --all";
+          lg2 = "lg2-specific --all";
+          lg3 = "lg3-specific --all";
+
+          lg1-specific = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'";
+          lg2-specific = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'";
+          lg3-specific = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'";
+        
+        safe.directory = ["/etc/nixos"];
+        };
+ 
+      };
+
+    };
+  }
