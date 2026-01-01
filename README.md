@@ -31,12 +31,10 @@ This will run home manager in an isolated environment, which will be used to ins
 the rest of the packages and dotfiles on the system. The resulting installation will
 have home manager available.
 
-### 3. ...
-```
-home-manager switch --flake .#personal
-```
-```
-nix-collect-garbage -d
-```
-### 4. Profit
+### 3. Common commands
+
+- `make` - run home manager to apply changes
+- `make clean` - clean up home manager cache
+- `make format` - format nix files
+
 
