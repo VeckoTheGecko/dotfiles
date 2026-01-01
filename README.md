@@ -24,7 +24,7 @@ If on NixOS:
 Install packages and dotfiles:
 
 ```
-nix run home-manager/release-25.11 --switch .#personal
+nix run home-manager/release-25.11 -- switch --flake .#personal
 ```
 
 This will run home manager in an isolated environment, which will be used to install

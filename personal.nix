@@ -52,8 +52,12 @@
         
         safe.directory = ["/etc/nixos"];
         };
- 
       };
-
+    };
+    nixpkgs = {
+      config = {
+        allowUnfree = true;
+        allowUnfreePredicate = (_: true);
+      };
     };
   }
