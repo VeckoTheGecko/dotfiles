@@ -15,7 +15,7 @@ cd ~/dotfiles
 ### 2. Install
 
 If on Mac:
-- install nix
+- [install Nix](https://nixos.org/download/)
 
 If on NixOS:
 - Symlink OS config into right place `sudo ln -s ~/dotfiles/nixos /etc/nixos`

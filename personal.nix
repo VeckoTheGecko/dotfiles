@@ -29,7 +29,7 @@
 
       # You do not need to change this if you're reading this in the future.
       # Don't ever change this after the first build.  Don't ask questions.
-      stateVersion = "25.11";
+      stateVersion = "24.11";
     };
     programs.git = {
       enable = true;
