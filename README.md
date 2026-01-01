@@ -8,11 +8,20 @@ NixOS configuration files.
 ### 1. Clone down and cd in
 
 ```
-git clone ... $HOME/dotfiles
-cd $HOME/dotfiles
+git clone ... ~/dotfiles
+cd ~/dotfiles
 ```
 
 ### 2. Install
+
+If on Mac:
+- install nix
+
+If on NixOS:
+- Symlink OS config into right place `sudo ln -s ~/dotfiles/nixos /etc/nixos`
+- `sudo nixos rebuild switch`
+
+Install packages and dotfiles:
 
 ```
 nix run home-manager/release-25.11 --switch .#personal

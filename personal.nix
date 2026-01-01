@@ -2,7 +2,27 @@
   username = "vecko";
   in {
     home = {
-      packages = with pkgs; [
+      packages = with pkgs; [ # mainly focussing on CLI tooling etc
+        pkgs.git
+        pkgs.zsh
+        pkgs.wezterm
+        pkgs.kanata-with-cmd
+        pkgs.starship
+        pkgs.uv
+        pkgs.pixi
+        
+        pkgs.neovim
+        pkgs.ripgrep
+        pkgs.lazygit
+        pkgs.fnm # node version manager
+        pkgs.python312
+        pkgs.unzip
+        pkgs.kanata
+        pkgs.tree
+        pkgs.xclip
+        pkgs.claude-code
+        pkgs.home-manager
+        pkgs.gnumake42
       ];
       inherit username;
       homeDirectory = "/home/${username}";
