@@ -17,7 +17,7 @@
         pkgs.fnm # node version manager
         pkgs.python312
         pkgs.unzip
-        pkgs.kanata
+        #pkgs.kanata # broken for some reason
         pkgs.tree
         pkgs.xclip
         pkgs.claude-code
