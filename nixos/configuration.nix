@@ -4,22 +4,24 @@
 
 { config, pkgs, ... }:
 
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      <home-manager/nixos>
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    <home-manager/nixos>
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  
+
   nix.gc.automatic = true;
   nix.gc.dates = "daily";
   nix.gc.options = "--delete-older-than 7d";
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -54,7 +56,7 @@
 
   # Enable the GNOME Desktop Environment.
   services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable= true;
+  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -89,23 +91,26 @@
   users.users.vecko = {
     isNormalUser = true;
     description = "vecko";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
-           pkgs.home-manager
-     pkgs.gnumake42
+      pkgs.home-manager
+      pkgs.gnumake42
 
-     pkgs.brave
-     pkgs.obsidian
-     pkgs.anki
-     pkgs.vlc
-     pkgs.signal-desktop
-     pkgs.inkscape-with-extensions
-     pkgs.flameshot
-     pkgs.libreoffice-qt-fresh
+      pkgs.brave
+      pkgs.obsidian
+      pkgs.anki
+      pkgs.vlc
+      pkgs.signal-desktop
+      pkgs.inkscape-with-extensions
+      pkgs.flameshot
+      pkgs.libreoffice-qt-fresh
 
-     # Dev
-     pkgs.vscode
-     pkgs.gimp-with-plugins
+      # Dev
+      pkgs.vscode
+      pkgs.gimp-with-plugins
     ];
     shell = pkgs.zsh;
   };
@@ -118,12 +123,12 @@
 
   # List packages installed in system profile - as opposed to per-user
   environment.systemPackages = with pkgs; [
- ];
-fonts.packages = with pkgs; [
+  ];
+  fonts.packages = with pkgs; [
     #(nerdfonts.override { fonts = ["FiraCode"]; })
     nerd-fonts.fira-code
-];
-programs.nix-ld.enable = true;
+  ];
+  programs.nix-ld.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
