@@ -104,27 +104,8 @@
      pkgs.libreoffice-qt-fresh
 
      # Dev
-     pkgs.git
-     pkgs.zsh
-     pkgs.wezterm
-     pkgs.kanata-with-cmd
-     pkgs.starship
      pkgs.vscode
-     pkgs.uv
-     pkgs.pixi
      pkgs.gimp-with-plugins
-     
-     pkgs.neovim
-     pkgs.ripgrep
-     pkgs.lazygit
-     pkgs.fnm # node version manager
-     pkgs.python312
-     pkgs.unzip
-     pkgs.kanata
-
-     pkgs.tree
-     pkgs.xclip
-     pkgs.claude-code
     ];
     shell = pkgs.zsh;
   };
