@@ -39,7 +39,7 @@ in
     settings = {
       user.name = "Vecko";
       user.email = "36369090+VeckoTheGecko@users.noreply.github.com";
-
+      core.editor = "nvim";
       init.defaultBranch = "main";
 
       alias = {
