@@ -38,6 +38,8 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
+  i18n.inputMethod.enable = true;
+  i18n.inputMethod.type = "ibus";
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "nl_NL.UTF-8";
