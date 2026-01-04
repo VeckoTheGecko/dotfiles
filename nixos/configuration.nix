@@ -103,6 +103,7 @@
       pkgs.obsidian
       pkgs.anki
       pkgs.vlc
+      pkgs.protonvpn-gui
       pkgs.signal-desktop
       pkgs.inkscape-with-extensions
       pkgs.flameshot
@@ -123,6 +124,7 @@
 
   # List packages installed in system profile - as opposed to per-user
   environment.systemPackages = with pkgs; [
+    wireguard-tools # for VPNs
   ];
   fonts.packages = with pkgs; [
     #(nerdfonts.override { fonts = ["FiraCode"]; })
@@ -147,6 +149,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+  networking.firewall.checkReversePath = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
