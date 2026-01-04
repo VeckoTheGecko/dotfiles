@@ -38,3 +38,8 @@ have home manager available.
 - `make format` - format nix files
 
 
+## TODO
+- [ ] Get kanata working
+- [ ] Integrate home manager conf into configuration.nix
+- [ ] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
+- [ ] get working on macos (migrate brew)
