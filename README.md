@@ -43,3 +43,4 @@ have home manager available.
 - [ ] Integrate home manager conf into configuration.nix
 - [ ] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
 - [ ] get working on macos (migrate brew)
+- [ ] Move repo to Codeberg
