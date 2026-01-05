@@ -1,6 +1,6 @@
 - [ ] Get kanata working
-- [ ] Integrate home manager conf into configuration.nix
-- [ ] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
+- [x] Integrate home manager conf into configuration.nix
+- [x] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
 - [ ] get working on macos (migrate Brewfile)
 - [ ] Move repo to Codeberg
 - [ ] Add keybase to nix config
