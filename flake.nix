@@ -28,7 +28,7 @@
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
-              home-manager.users.vecko = import ./home.nix;
+              home-manager.users.vecko = import ./modules/home;
             }
           ];
         };
@@ -41,7 +41,7 @@
               allowUnfree = true;
             };
           };
-          modules = [ ./home.nix ];
+          modules = [ ./modules/home ];
         };
       };
     };
