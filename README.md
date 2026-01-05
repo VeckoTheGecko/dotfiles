@@ -17,7 +17,7 @@ cd ~/dotfiles
 If on Mac:
 - [install Nix](https://nixos.org/download/)
 
-If on NixOS:
+If on NixOS ([install](https://nixos.org/download/#nix-install-linux)):
 - Symlink OS config into right place `sudo ln -s ~/dotfiles/nixos /etc/nixos`
 - `sudo nixos rebuild switch`
 
