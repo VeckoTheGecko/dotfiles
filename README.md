@@ -16,6 +16,9 @@ cd ~/dotfiles
 
 If on Mac:
 - [install Nix](https://nixos.org/download/)
+- `home-manager switch --flake .#macbook`
+
+(first time might need `nix run home-manager/release-25.11 -- switch --flake .#macbook`)
 
 If on NixOS ([install](https://nixos.org/download/#nix-install-linux)):
 - `sudo nixos rebuild switch --flake .#nixos`
@@ -24,20 +27,8 @@ If on NixOS ([install](https://nixos.org/download/#nix-install-linux)):
 tmp measure:
 - `cp -r ~/dotiles/nvim ~/.config/nvim`. This is for now until home manager is configured with nvim
 
-Install packages and dotfiles:
+### 3. Other commands
 
-```
-nix run home-manager/release-25.11 -- switch --flake .#home
-```
-
-This will run home manager in an isolated environment, which will be used to install
-the rest of the packages and dotfiles on the system. The resulting installation will
-have home manager available.
-
-### 3. Common commands
-
-- `home-manager switch --flake .#home`
-- `sudo nixos rebuild switch --flake .#nixos`
 - `make clean` - clean up home manager cache
 - `make format` - format nix files
 
