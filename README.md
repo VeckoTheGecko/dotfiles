@@ -21,6 +21,10 @@ If on NixOS:
 - Symlink OS config into right place `sudo ln -s ~/dotfiles/nixos /etc/nixos`
 - `sudo nixos rebuild switch`
 
+
+tmp measure:
+- `ln -s ~/dotiles/nvim ~/.config/nvim`. This is for now until home manager is configured with nvim
+
 Install packages and dotfiles:
 
 ```
