@@ -18,12 +18,11 @@ If on Mac:
 - [install Nix](https://nixos.org/download/)
 
 If on NixOS ([install](https://nixos.org/download/#nix-install-linux)):
-- Symlink OS config into right place `sudo ln -s ~/dotfiles/nixos /etc/nixos`
-- `sudo nixos rebuild switch`
+- `sudo nixos rebuild switch --flake .#nixos`
 
 
 tmp measure:
-- `ln -s ~/dotiles/nvim ~/.config/nvim`. This is for now until home manager is configured with nvim
+- `cp -r ~/dotiles/nvim ~/.config/nvim`. This is for now until home manager is configured with nvim
 
 Install packages and dotfiles:
 
@@ -37,11 +36,12 @@ have home manager available.
 
 ### 3. Common commands
 
-- `make` - run home manager to apply changes
+- `home-manager switch --flake .#home`
+- `sudo nixos rebuild switch --flake .#nixos`
 - `make clean` - clean up home manager cache
 - `make format` - format nix files
 
-# Resources
+## Resources
 
 
 - [Ultimate Nix flakes guide | Vimjoyer](https://yewtu.be/watch?v=JCeYq72Sko0)
