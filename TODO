@@ -7,3 +7,4 @@
 - [ ] Migrate nvim config to dotfiles
 - [ ] Move starship and config to home manager
 - [ ] Investigate obsidian with home manager
+- [ ] Add GH CLI to packages (consider installing fjo as well https://codeberg.org/VoiDD/fjo )
