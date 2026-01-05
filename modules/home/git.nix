@@ -1,7 +1,4 @@
-{ lib, pkgs, ... }:
-let
-  username = "vecko";
-in
+{ pkgs, ... }:
 {
   home = {
     packages = with pkgs; [
