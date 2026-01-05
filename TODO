@@ -6,3 +6,4 @@
 - [ ] Add keybase to nix config
 - [ ] Migrate nvim config to dotfiles
 - [ ] Move starship and config to home manager
+- [ ] Investigate obsidian with home manager
