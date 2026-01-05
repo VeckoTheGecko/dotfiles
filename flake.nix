@@ -21,9 +21,9 @@
     in
     {
       homeConfigurations = {
-        personal = home-manager.lib.homeManagerConfiguration {
+        home = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./personal.nix ];
+          modules = [ ./home.nix ];
         };
       };
     };

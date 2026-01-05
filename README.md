@@ -28,7 +28,7 @@ tmp measure:
 Install packages and dotfiles:
 
 ```
-nix run home-manager/release-25.11 -- switch --flake .#personal
+nix run home-manager/release-25.11 -- switch --flake .#home
 ```
 
 This will run home manager in an isolated environment, which will be used to install
@@ -40,4 +40,10 @@ have home manager available.
 - `make` - run home manager to apply changes
 - `make clean` - clean up home manager cache
 - `make format` - format nix files
+
+# Resources
+
+
+- [Ultimate Nix flakes guide | Vimjoyer](https://yewtu.be/watch?v=JCeYq72Sko0)
+- [Nix Wiki on Flakes](https://wiki.nixos.org/wiki/Flakes)
 
