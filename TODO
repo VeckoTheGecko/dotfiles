@@ -17,3 +17,5 @@
 - [x] Separate out config into hosts based setup so that mac home can be treated different
 - [ ] Add support for VMs (regardless of architecture)
 - [ ] Update home-manager with a claude config according to matt
+- [ ] Add rust to setups
+- [ ] wezterm config
