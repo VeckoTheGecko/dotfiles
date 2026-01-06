@@ -3,6 +3,11 @@ let
   homeDirectory = if platform == "darwin" then "/Users/${username}" else "/home/${username}";
 in
 {
+  nix = {
+    package = pkgs.nix;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
+
   home = {
     packages = with pkgs; [
       pkgs.home-manager
