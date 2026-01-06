@@ -1,4 +1,8 @@
-{ lib, platform ? "nixos", ... }:
+{
+  lib,
+  platform ? "nixos",
+  ...
+}:
 {
   imports = [
     ./home.nix
@@ -7,7 +11,8 @@
     ./cli.nix
     ./starship.nix
     ./wezterm.nix
-  ] ++ lib.optionals (platform == "nixos") [
+  ]
+  ++ lib.optionals (platform == "nixos") [
     ./hyprland.nix
   ];
 }

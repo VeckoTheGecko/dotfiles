@@ -1,11 +1,20 @@
-{ pkgs, lib, platform ? "nixos", username, ... }:
+{
+  pkgs,
+  lib,
+  platform ? "nixos",
+  username,
+  ...
+}:
 let
   homeDirectory = if platform == "darwin" then "/Users/${username}" else "/home/${username}";
 in
 {
-  nix = {
+  nix = lib.mkIf (platform == "darwin") {
     package = pkgs.nix;
-    settings.experimental-features = [ "nix-command" "flakes" ];
+    settings.experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
   };
 
   home = {

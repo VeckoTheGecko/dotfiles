@@ -29,6 +29,10 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.users.vecko = import ./hosts/nixos-laptop/home.nix;
+              home-manager.extraSpecialArgs = {
+                platform = "nixos";
+                username = "vecko";
+              };
             }
           ];
         };
