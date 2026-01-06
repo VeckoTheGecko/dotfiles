@@ -19,3 +19,4 @@
 - [ ] Update home-manager with a claude config according to matt
 - [ ] Add rust to setups
 - [x] wezterm config
+- [ ] manage zshrc via homemanager
