@@ -27,7 +27,22 @@ If on NixOS ([install](https://nixos.org/download/#nix-install-linux)):
 tmp measure:
 - `cp -r ~/dotiles/nvim ~/.config/nvim`. This is for now until home manager is configured with nvim
 
-### 3. Other commands
+### 3. macOS-specific setup
+
+For macOS users, set up automatic work hour tracking:
+
+```bash
+# Copy Launch Agent to enable automatic tracking on startup
+cp ~/dotfiles/hosts/macbook/com.hodgs004.screenlockmonitor.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.hodgs004.screenlockmonitor.plist
+
+# View your work hours
+~/dotfiles/scripts/parse-work-hours.py
+```
+
+See `hosts/macbook/README.md` for details.
+
+### 4. Other commands
 
 - `make clean` - clean up home manager cache
 - `make format` - format nix files
