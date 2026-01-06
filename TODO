@@ -14,5 +14,6 @@
   - Discord
   - epub reader
   - gif recorder (for coding) / OBS
-- [ ] Separate out config into hosts based setup so that mac home can be treated different
+- [x] Separate out config into hosts based setup so that mac home can be treated different
 - [ ] Add support for VMs (regardless of architecture)
+- [ ] Update home-manager with a claude config according to matt
