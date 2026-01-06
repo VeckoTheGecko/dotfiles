@@ -21,3 +21,4 @@
 - [x] wezterm config
 - [ ] manage zshrc via homemanager
 - [ ] Look into nix-darwin https://github.com/nix-darwin/nix-darwin
+- [ ] Make GPG keys and add to keybase
