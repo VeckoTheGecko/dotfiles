@@ -5,7 +5,7 @@
 - [ ] Move repo to Codeberg
 - [ ] Add keybase to nix config
 - [ ] Migrate nvim config to dotfiles
-- [ ] Move starship and config to home manager
+- [x] Move starship and config to home manager
 - [ ] Investigate obsidian with home manager
 - [ ] Add GH CLI to packages (consider installing fjo as well https://codeberg.org/VoiDD/fjo )
 - [ ] Add the following software

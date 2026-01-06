@@ -5,5 +5,6 @@
     ../../modules/home/git.nix
     ../../modules/home/nvim.nix
     ../../modules/home/cli.nix
+    ../../modules/home/starship.nix
   ];
 }
