@@ -14,3 +14,4 @@
   - Discord
   - epub reader
   - gif recorder (for coding) / OBS
+- [ ] Separate out config into hosts based setup so that mac home can be treated different
