@@ -18,4 +18,4 @@
 - [ ] Add support for VMs (regardless of architecture)
 - [ ] Update home-manager with a claude config according to matt
 - [ ] Add rust to setups
-- [ ] wezterm config
+- [x] wezterm config

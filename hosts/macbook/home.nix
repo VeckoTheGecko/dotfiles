@@ -6,5 +6,6 @@
     ../../modules/home/nvim.nix
     ../../modules/home/cli.nix
     ../../modules/home/starship.nix
+    ../../modules/home/wezterm.nix
   ];
 }
