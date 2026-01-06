@@ -20,3 +20,4 @@
 - [ ] Add rust to setups
 - [x] wezterm config
 - [ ] manage zshrc via homemanager
+- [ ] Look into nix-darwin https://github.com/nix-darwin/nix-darwin
