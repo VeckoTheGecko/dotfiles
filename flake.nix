@@ -21,14 +21,14 @@
     in
     {
       nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
+        nixos-laptop = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./nixos/configuration.nix
+            ./hosts/nixos-laptop/configuration.nix
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
-              home-manager.users.vecko = import ./modules/home;
+              home-manager.users.vecko = import ./hosts/nixos-laptop/home.nix;
             }
           ];
         };
@@ -41,7 +41,7 @@
               allowUnfree = true;
             };
           };
-          modules = [ ./modules/home ];
+          modules = [ ./hosts/macbook/home.nix ];
         };
       };
     };

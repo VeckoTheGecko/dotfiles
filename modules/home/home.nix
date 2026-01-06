@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, lib, platform ? "nixos", username, ... }:
 let
-  username = "vecko";
+  homeDirectory = if platform == "darwin" then "/Users/${username}" else "/home/${username}";
 in
 {
   home = {
@@ -16,7 +16,7 @@ in
       pkgs.claude-code
     ];
     inherit username;
-    homeDirectory = "/home/${username}";
+    inherit homeDirectory;
 
     # You do not need to change this if you're reading this in the future.
     # Don't ever change this after the first build.  Don't ask questions.

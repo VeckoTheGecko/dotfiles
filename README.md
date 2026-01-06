@@ -39,3 +39,7 @@ tmp measure:
 - [Nix Wiki on Flakes](https://wiki.nixos.org/wiki/Flakes)
 
 https://discourse.nixos.org/t/boot-partition-is-too-small-and-becoming-full/32194/10
+
+## tmp
+
+Note that the last tested hash on nixos is 08a3d3b9ca69b4c4e535d97ad03b967feeb72b7c

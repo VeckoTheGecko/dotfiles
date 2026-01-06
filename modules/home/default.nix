@@ -1,9 +1,11 @@
+{ lib, platform ? "nixos", ... }:
 {
   imports = [
     ./home.nix
     ./git.nix
     ./nvim.nix
     ./cli.nix
-    ./hyprland.nix # TODO Only if nixos
+  ] ++ lib.optionals (platform == "nixos") [
+    ./hyprland.nix
   ];
 }
