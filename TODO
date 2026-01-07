@@ -7,7 +7,7 @@
 - [ ] Migrate nvim config to dotfiles
 - [x] Move starship and config to home manager
 - [ ] Investigate obsidian with home manager
-  - OK. Might not be easy https://github.com/mirza-src/.dotfiles/blob/3a54b33b6d252a07855fe0e20718be9395aa8405/pkgs/obsidian-plugins/shiki.nix#L7 . Still need to do more searching...
+  - OK. Might not be easy https://github.com/mirza-src/.dotfiles/blob/3a54b33b6d252a07855fe0e20718be9395aa8405/pkgs/obsidian-plugins/shiki.nix#L7 . Still need to do more searching... also see https://github.com/nix-community/home-manager/issues/7346
 - [ ] Add GH CLI to packages (consider installing fjo as well https://codeberg.org/VoiDD/fjo )
 - [ ] Add the following software
   - Docker (or other containerization)
