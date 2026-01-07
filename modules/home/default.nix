@@ -11,6 +11,7 @@
     ./cli.nix
     ./starship.nix
     ./wezterm.nix
+    ./obsidian.nix
   ]
   ++ lib.optionals (platform == "nixos") [
     ./hyprland.nix
