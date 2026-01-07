@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.obsidian = {
     enable = true;
     vaults = {
@@ -55,20 +55,20 @@
         "file-recovery"
       ];
 
-      # communityPlugins = [
-      #   #"obsidian-excalidraw-plugin"
-      #   "dataview"
-      #   "templater-obsidian"
-      #   "url-into-selection"
-      #   "obsidian-git"
-      #   "obsidian-plugin-update-tracker"
-      #   "tag-wrangler"
-      #   "obsidian-icon-folder"
-      #   "obsidian-advanced-slides"
-      #   "obsidian-style-settings"
-      #   "terminal"
-      #   "card-board"
-      # ];
+      communityPlugins = with pkgs.obsidian-plugins; [
+        #"obsidian-excalidraw-plugin"
+        dataview
+        templater-obsidian
+        url-into-selection
+        obsidian-git
+        obsidian-plugin-update-tracker
+        tag-wrangler
+        obsidian-icon-folder
+        obsidian-advanced-slides
+        obsidian-style-settings
+        terminal
+        card-board
+      ];
     };
   };
 }
