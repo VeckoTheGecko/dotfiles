@@ -21,6 +21,7 @@ in
     packages = with pkgs; [
       pkgs.home-manager
       pkgs.gnumake42
+      pkgs.zoxide
 
       # python
       pkgs.uv
