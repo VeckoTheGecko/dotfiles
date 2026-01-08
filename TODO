@@ -22,3 +22,4 @@
 - [ ] manage zshrc via homemanager
 - [ ] Look into nix-darwin https://github.com/nix-darwin/nix-darwin
 - [ ] Make GPG keys and add to keybase
+- [ ] Install tmux and configure (https://github.com/starship/starship/discussions/1107#discussioncomment-13953875)
