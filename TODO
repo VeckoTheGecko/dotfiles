@@ -1,4 +1,6 @@
 - [ ] Get kanata working
+  - [x] Nix
+  - [ ] MacOS (look at https://www.reddit.com/r/ErgoMechKeyboards/comments/1fojvif/is_anybody_running_kanata_on_macos_to_do_keyboard/)
 - [x] Integrate home manager conf into configuration.nix
 - [x] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
 - [ ] get working on macos (migrate Brewfile)

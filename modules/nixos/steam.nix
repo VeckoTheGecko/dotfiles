@@ -1,4 +1,9 @@
-{ lib, nixpkgs, programs, ... }:
+{
+  lib,
+  nixpkgs,
+  programs,
+  ...
+}:
 {
   programs.steam = {
     enable = true;
