@@ -53,5 +53,6 @@ See `hosts/macbook/README.md` for details.
 - [Ultimate Nix flakes guide | Vimjoyer](https://yewtu.be/watch?v=JCeYq72Sko0)
 - [Nix Wiki on Flakes](https://wiki.nixos.org/wiki/Flakes)
 
+- [Setting up Wezterm terminal multiplexing](https://www.florianbellmann.com/blog/switch-from-tmux-to-wezterm)
 https://discourse.nixos.org/t/boot-partition-is-too-small-and-becoming-full/32194/10
 

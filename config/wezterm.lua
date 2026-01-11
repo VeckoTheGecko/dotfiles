@@ -20,6 +20,25 @@ config.colors = {
 
 config.font_size = 19
 
+config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
+config.keys = {
+	-- splitting
+	{
+		mods = "LEADER",
+		key = "-",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		mods = "LEADER",
+		key = "=",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		mods = "LEADER",
+		key = "m",
+		action = wezterm.action.TogglePaneZoomState,
+	},
+}
 config.window_decorations = "RESIZE"
 -- config.window_background_opacity = 0.8
 -- config.macos_window_background_blur = 10
