@@ -14,6 +14,6 @@
     ../../modules/home/cli.nix
     ../../modules/home/starship.nix
     ../../modules/home/wezterm.nix
-    ../../modules/home/kanata.nix
+    # ../../modules/home/kanata.nix
   ];
 }
