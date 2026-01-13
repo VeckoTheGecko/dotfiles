@@ -4,6 +4,7 @@
     packages = with pkgs; [
       pkgs.wezterm
       pkgs.gh
+      # pkgs.gnupg
     ];
   };
 
