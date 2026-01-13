@@ -5,7 +5,7 @@
 - [x] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
 - [ ] get working on macos (migrate Brewfile)
 - [ ] Move repo to Codeberg
-- [ ] Add keybase to nix config
+- [x] Add keybase to nix config
 - [ ] Migrate nvim config to dotfiles
 - [x] Move starship and config to home manager
 - [ ] Investigate obsidian with home manager
