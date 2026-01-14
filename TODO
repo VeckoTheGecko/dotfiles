@@ -1,30 +1,23 @@
-- [ ] Get kanata working
-  - [x] Nix
-  - [ ] MacOS (look at https://www.reddit.com/r/ErgoMechKeyboards/comments/1fojvif/is_anybody_running_kanata_on_macos_to_do_keyboard/ and https://github.com/rszyma/kanata-tray/issues/67)
-- [x] Integrate home manager conf into configuration.nix
-- [x] Modularise home manager (split out desktop apps, split out qbitwarden etc.)
-- [ ] get working on macos (migrate Brewfile)
-- [ ] Move repo to Codeberg
-- [x] Add keybase to nix config
+# helps with work
+- [ ] manage zshrc via homemanager
+- [ ] Get kanata working on MacOS (look at https://www.reddit.com/r/ErgoMechKeyboards/comments/1fojvif/is_anybody_running_kanata_on_macos_to_do_keyboard/ and https://github.com/rszyma/kanata-tray/issues/67)
+- [ ] Update home-manager with a claude config according to matt
 - [ ] Migrate nvim config to dotfiles
-- [x] Move starship and config to home manager
-- [ ] Investigate obsidian with home manager
-- [ ] Add GH CLI to packages (consider installing fjo as well https://codeberg.org/VoiDD/fjo )
-- [ ] Add the following software
+
+# other
+- [ ] Add the following software to nixos
   - Docker (or other containerization)
   - Xournal++
   - Discord
   - epub reader
   - gif recorder (for coding) / OBS
-- [x] Separate out config into hosts based setup so that mac home can be treated different
 - [ ] Add support for VMs (regardless of architecture)
-- [ ] Update home-manager with a claude config according to matt
 - [ ] Add rust to setups
-- [x] wezterm config
-- [ ] manage zshrc via homemanager
 - [ ] Look into nix-darwin https://github.com/nix-darwin/nix-darwin
-- [ ] Make GPG keys and add to keybase
-- [ ] Install tmux and configure (https://github.com/starship/starship/discussions/1107#discussioncomment-13953875)
 - [ ] Fix multiplexing https://github.com/wezterm/wezterm/issues/2771#issuecomment-1322873607
 - [x] Learn about gpg https://medium.com/@azerella/gpg-for-dummies-5bdde94fa36d
 - [ ] Manage ty through nix using the unstable channel
+- [ ] Make GPG keys and add to keybase
+- [ ] get working on macos (migrate Brewfile)
+- [ ] Investigate obsidian with home manager
+- [ ] Move repo to Codeberg
