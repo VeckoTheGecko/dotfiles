@@ -27,3 +27,4 @@
 - [ ] Install tmux and configure (https://github.com/starship/starship/discussions/1107#discussioncomment-13953875)
 - [ ] Fix multiplexing https://github.com/wezterm/wezterm/issues/2771#issuecomment-1322873607
 - [x] Learn about gpg https://medium.com/@azerella/gpg-for-dummies-5bdde94fa36d
+- [ ] Manage ty through nix using the unstable channel
