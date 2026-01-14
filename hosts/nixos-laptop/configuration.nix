@@ -110,6 +110,7 @@
       pkgs.obsidian
       pkgs.anki
       pkgs.vlc
+      pkgs.calibre
       pkgs.protonvpn-gui
       pkgs.signal-desktop
       pkgs.inkscape-with-extensions
