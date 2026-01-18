@@ -112,6 +112,7 @@
       pkgs.vlc
       pkgs.calibre
       pkgs.protonvpn-gui
+      pkgs.qbittorrent
       pkgs.signal-desktop
       pkgs.inkscape-with-extensions
       pkgs.flameshot
