@@ -22,3 +22,4 @@
 - [ ] get working on macos (migrate Brewfile)
 - [ ] Investigate obsidian with home manager
 - [ ] Move repo to Codeberg
+- [ ] Add pixi config https://pixi.prefix.dev/v0.62.2/reference/pixi_configuration/
