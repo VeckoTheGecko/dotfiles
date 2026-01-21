@@ -13,6 +13,7 @@
       user.email = "36369090+VeckoTheGecko@users.noreply.github.com";
       core.editor = "nvim";
       init.defaultBranch = "main";
+      fetch.prune = true;
 
       alias = {
         ac = "!git add -u && git commit";
