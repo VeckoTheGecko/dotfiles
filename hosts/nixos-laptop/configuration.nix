@@ -103,24 +103,24 @@
       "wheel"
     ];
     packages = with pkgs; [
-      pkgs.home-manager
-      pkgs.gnumake42
+      home-manager
+      gnumake42
 
-      pkgs.brave
-      pkgs.obsidian
-      pkgs.anki
-      pkgs.vlc
-      pkgs.calibre
-      pkgs.protonvpn-gui
-      pkgs.qbittorrent
-      pkgs.signal-desktop
-      pkgs.inkscape-with-extensions
-      pkgs.flameshot
-      pkgs.libreoffice-qt-fresh
+      brave
+      obsidian
+      anki
+      vlc
+      calibre
+      protonvpn-gui
+      qbittorrent
+      signal-desktop
+      inkscape-with-extensions
+      flameshot
+      libreoffice-qt-fresh
 
       # Dev
-      pkgs.vscode
-      pkgs.gimp-with-plugins
+      vscode
+      gimp-with-plugins
     ];
     shell = pkgs.zsh;
   };
