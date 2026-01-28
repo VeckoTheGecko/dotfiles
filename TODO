@@ -17,7 +17,7 @@
 - [ ] Look into nix-darwin https://github.com/nix-darwin/nix-darwin
 - [ ] Fix multiplexing https://github.com/wezterm/wezterm/issues/2771#issuecomment-1322873607
 - [x] Learn about gpg https://medium.com/@azerella/gpg-for-dummies-5bdde94fa36d
-- [ ] Manage ty through nix using the unstable channel
+- [x] Manage ty through nix using the unstable channel
 - [ ] Make GPG keys and add to keybase
 - [ ] get working on macos (migrate Brewfile)
 - [ ] Investigate obsidian with home manager

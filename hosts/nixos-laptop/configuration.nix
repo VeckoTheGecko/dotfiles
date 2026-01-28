@@ -103,7 +103,6 @@
       "wheel"
     ];
     packages = with pkgs; [
-      home-manager
       gnumake42
 
       brave
